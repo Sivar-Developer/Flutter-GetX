@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/controllers/SecondController.dart';
-import 'package:flutter_getx/controllers/my_controller.dart';
+import 'package:flutter_getx/controllers/MyController.dart';
 // import 'package:flutter_getx/models/student.dart';
 import 'package:get/get.dart';
 
