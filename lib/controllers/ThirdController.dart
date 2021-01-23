@@ -5,8 +5,8 @@ class ThirdController extends GetxController {
 
   void increment() async {
     await Future<int>.delayed(Duration(seconds: 3));
-    this.count++;
-    update();
+    count++;
+    update(['txtCount']);
   }
 
   void cleanUpTask() {

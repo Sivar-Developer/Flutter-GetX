@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/views/screens/Screens.dart';
 import 'package:get/get.dart';
-import 'views/screens/screens.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/home/:id', page: () => HomeScreen(), transition: Transition.fadeIn),
         GetPage(name: '/reactive', page: () => ReactiveScreen(), transition: Transition.fadeIn),
         GetPage(name: '/thirdreactive', page: () => ThirdReactiveScreen(), transition: Transition.fadeIn),
+        GetPage(name: '/forthreactive', page: () => ForthReactiveScreen(), transition: Transition.fadeIn),
       ],
     );
   }
