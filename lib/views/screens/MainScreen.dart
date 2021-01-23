@@ -153,6 +153,13 @@ class _MainScreenState extends State<MainScreen> {
                 Get.offNamed('/forthreactive');
               },
             ),
+            RaisedButton(
+              color: Colors.blue,
+              child: Text('Go to Localized'),
+              onPressed: (){
+                Get.offNamed('/localized');
+              },
+            ),
           ],
         ),
       ),

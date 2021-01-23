@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/Messages.dart';
 import 'package:flutter_getx/views/screens/Screens.dart';
 import 'package:get/get.dart';
 
@@ -10,7 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      translations: Messages(),
+      locale: Locale('en', 'US'),
+      fallbackLocale: Locale('en', 'US'),
+      title: 'Internationalization',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -21,6 +25,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/reactive', page: () => ReactiveScreen(), transition: Transition.fadeIn),
         GetPage(name: '/thirdreactive', page: () => ThirdReactiveScreen(), transition: Transition.fadeIn),
         GetPage(name: '/forthreactive', page: () => ForthReactiveScreen(), transition: Transition.fadeIn),
+        GetPage(name: '/localized', page: () => LocalizedScreen(), transition: Transition.fadeIn),
       ],
     );
   }
