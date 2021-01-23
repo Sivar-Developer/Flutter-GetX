@@ -139,6 +139,13 @@ class _MainScreenState extends State<MainScreen> {
                 Get.offNamed('/reactive');
               },
             ),
+            RaisedButton(
+              color: Colors.blue,
+              child: Text('Go to Third Reactive'),
+              onPressed: (){
+                Get.offNamed('/thirdreactive');
+              },
+            ),
           ],
         ),
       ),
