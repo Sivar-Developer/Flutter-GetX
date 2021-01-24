@@ -7,3 +7,4 @@ export 'package:flutter_getx/views/screens/LocalizedScreen.dart';
 export 'package:flutter_getx/views/screens/ServiceScreen.dart';
 export 'package:flutter_getx/views/screens/ProductsScreen.dart';
 export 'package:flutter_getx/views/screens/GetStorageScreen.dart';
+export 'package:flutter_getx/views/screens/GetViewScreen.dart';

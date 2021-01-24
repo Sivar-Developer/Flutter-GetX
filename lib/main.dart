@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/services', page: () => ServiceScreen(), transition: Transition.fadeIn),
         GetPage(name: '/products/list', page: () => ProductsScreen(), transition: Transition.fadeIn),
         GetPage(name: '/storage', page: () => GetStorageScreen(), transition: Transition.fadeIn),
+        GetPage(name: '/getview', page: () => GetViewScreen(), transition: Transition.fadeIn),
       ],
     );
   }

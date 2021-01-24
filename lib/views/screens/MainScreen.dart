@@ -189,6 +189,13 @@ class _MainScreenState extends State<MainScreen> {
                   Get.toNamed('/storage');
                 },
               ),
+              RaisedButton(
+                color: Colors.black,
+                child: Text('Get View', style: TextStyle(color: Colors.white),),
+                onPressed: (){
+                  Get.toNamed('/getview');
+                },
+              ),
             ],
           ),
         ),
