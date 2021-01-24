@@ -16,7 +16,7 @@ class LocalizedScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('hello'.tr, style: TextStyle(fontSize: 25, color: Colors.purple),),
+            Text('hello'.tr, style: TextStyle(fontSize: 50, color: Colors.blueAccent, fontWeight: FontWeight.bold),),
             SizedBox(height: 25,),
             RaisedButton(
               child: Text('English'),

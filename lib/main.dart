@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/Messages.dart';
+import 'package:flutter_getx/services/Service.dart';
 import 'package:flutter_getx/views/screens/Screens.dart';
 import 'package:get/get.dart';
 
-void main() {
+void main() async {
+  await initServices();
   runApp(MyApp());
+}
+
+Future<void> initServices() async {
+  print('Starting services...');
+  await Get.putAsync<Service>(() async => Service());
+  print('All services started...');
 }
 
 class MyApp extends StatelessWidget {
@@ -26,6 +34,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/thirdreactive', page: () => ThirdReactiveScreen(), transition: Transition.fadeIn),
         GetPage(name: '/forthreactive', page: () => ForthReactiveScreen(), transition: Transition.fadeIn),
         GetPage(name: '/localized', page: () => LocalizedScreen(), transition: Transition.fadeIn),
+        GetPage(name: '/services', page: () => ServiceScreen(), transition: Transition.fadeIn),
       ],
     );
   }
