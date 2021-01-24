@@ -29,6 +29,7 @@ dependencies:
   process: ^4.0.0-nullsafety
   shared_preferences: ^0.5.12+4
   http: ^0.12.2
+  get_storage: ^1.4.0
 
 dev_dependencies:
   flutter_test:

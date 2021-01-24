@@ -3,8 +3,10 @@ import 'package:flutter_getx/Messages.dart';
 import 'package:flutter_getx/services/Service.dart';
 import 'package:flutter_getx/views/screens/Screens.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 void main() async {
+  await GetStorage.init();
   await initServices();
   runApp(MyApp());
 }
@@ -35,6 +37,8 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/forthreactive', page: () => ForthReactiveScreen(), transition: Transition.fadeIn),
         GetPage(name: '/localized', page: () => LocalizedScreen(), transition: Transition.fadeIn),
         GetPage(name: '/services', page: () => ServiceScreen(), transition: Transition.fadeIn),
+        GetPage(name: '/products/list', page: () => ProductsScreen(), transition: Transition.fadeIn),
+        GetPage(name: '/storage', page: () => GetStorageScreen(), transition: Transition.fadeIn),
       ],
     );
   }

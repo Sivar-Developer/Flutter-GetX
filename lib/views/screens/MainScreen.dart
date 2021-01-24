@@ -168,6 +168,27 @@ class _MainScreenState extends State<MainScreen> {
                   Get.offNamed('/services');
                 },
               ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text('Go to Services'),
+                onPressed: (){
+                  Get.offNamed('/services');
+                },
+              ),
+              RaisedButton(
+                color: Colors.black,
+                child: Text('Products List', style: TextStyle(color: Colors.white),),
+                onPressed: (){
+                  Get.toNamed('/products/list');
+                },
+              ),
+              RaisedButton(
+                color: Colors.black,
+                child: Text('Storage', style: TextStyle(color: Colors.white),),
+                onPressed: (){
+                  Get.toNamed('/storage');
+                },
+              ),
             ],
           ),
         ),
